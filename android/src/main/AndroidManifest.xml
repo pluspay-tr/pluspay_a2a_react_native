@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+      Android 11+ (API 30) package visibility: declare that this library needs
+      to resolve/launch the POS+ App2App intent. Merged into the host app.
+    -->
+    <queries>
+        <intent>
+            <action android:name="com.pluspay.POS_A2A" />
+        </intent>
+    </queries>
+</manifest>
