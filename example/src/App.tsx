@@ -23,7 +23,7 @@ import {
   PPEodRequestModel,
   PPParameterRequestModel,
   PPMultiPaymentRequest,
-} from 'pluspay_a2a_react_native';
+} from 'pluspay-a2a-react-native';
 
 /** Minimal RFC4122 v4 UUID (example only). */
 function uuidv4(): string {

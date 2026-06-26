@@ -1,22 +1,18 @@
-# pluspay_a2a_react_native
+# pluspay-a2a-react-native
 
 **POS+ (Pluspay)** Android uygulaması ile App-to-App (A2A) iletişim kurmak için geliştirilmiş React Native paketi. Bu paket, React Native uygulamanızdan POS+ uygulamasını başlatarak ödeme, iptal, EFT işlemleri, sipariş ödemeleri, gün sonu raporları ve parametre güncellemeleri yapmanızı sağlar.
 
 > **Not:** Bu paket yalnızca Android platformunu desteklemektedir. iOS'ta tüm çağrılar `UNSUPPORTED_PLATFORM` ile reddedilir.
 
-> **Yakında:** Bu paket npm üzerinde yayınlanacaktır. O zamana kadar aşağıdaki Git bağımlılığı yöntemini kullanabilirsiniz.
-
 ## Kurulum
 
-`package.json` dosyanıza Git referansı olarak ekleyin:
+Paketi npm üzerinden ekleyin:
 
 ```sh
-yarn add github:plus-pay-tr/pluspay_a2a_react_native#0.1.0
+yarn add pluspay-a2a-react-native
 # veya npm:
-npm install github:plus-pay-tr/pluspay_a2a_react_native#0.1.0
+npm install pluspay-a2a-react-native
 ```
-
-> **Not:** Her zaman kullanmak istediğiniz versiyonun tag'ini belirtin (örn. `#0.1.0`). Mevcut versiyonları görmek için [tags](https://github.com/plus-pay-tr/pluspay_a2a_react_native/tags) sayfasını ziyaret edin.
 
 RN ≥ 0.60 **autolinking** native modülü otomatik bağlar; ek kurulum gerekmez. Android 11+ paket görünürlüğü için gerekli `<queries>` girdisi paket manifestinde tanımlıdır ve host uygulamaya merge olur.
 
@@ -29,7 +25,7 @@ import {
   PPPaymentType,
   PPPaymentMethod,
   PPStartPaymentRequestModel,
-} from 'pluspay_a2a_react_native';
+} from 'pluspay-a2a-react-native';
 
 // 1. İstemciyi oluşturun ve başlatın
 const pluspay = new PPA2AClient();

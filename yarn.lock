@@ -6571,6 +6571,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pluspay-a2a-react-native@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "pluspay-a2a-react-native@workspace:."
+  dependencies:
+    "@jest/globals": "npm:^30.0.0"
+    "@react-native/babel-preset": "npm:0.85.0"
+    "@react-native/jest-preset": "npm:0.85.0"
+    "@types/react": "npm:^19.2.0"
+    del-cli: "npm:^7.0.0"
+    jest: "npm:^30.3.0"
+    react: "npm:19.2.3"
+    react-native: "npm:0.85.0"
+    react-native-builder-bob: "npm:^0.41.0"
+    turbo: "npm:^2.8.21"
+    typescript: "npm:^6.0.2"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
 "pluspay_a2a_react_native-example@workspace:example":
   version: 0.0.0-use.local
   resolution: "pluspay_a2a_react_native-example@workspace:example"
@@ -6590,27 +6611,6 @@ __metadata:
     react-native: "npm:0.85.0"
     react-native-builder-bob: "npm:^0.41.0"
     react-native-monorepo-config: "npm:^0.3.3"
-  languageName: unknown
-  linkType: soft
-
-"pluspay_a2a_react_native@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "pluspay_a2a_react_native@workspace:."
-  dependencies:
-    "@jest/globals": "npm:^30.0.0"
-    "@react-native/babel-preset": "npm:0.85.0"
-    "@react-native/jest-preset": "npm:0.85.0"
-    "@types/react": "npm:^19.2.0"
-    del-cli: "npm:^7.0.0"
-    jest: "npm:^30.3.0"
-    react: "npm:19.2.3"
-    react-native: "npm:0.85.0"
-    react-native-builder-bob: "npm:^0.41.0"
-    turbo: "npm:^2.8.21"
-    typescript: "npm:^6.0.2"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
   languageName: unknown
   linkType: soft
 

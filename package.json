@@ -1,5 +1,5 @@
 {
-  "name": "pluspay_a2a_react_native",
+  "name": "pluspay-a2a-react-native",
   "version": "0.1.0",
   "description": "PlusPay POS+ App2App (A2A) integration for React Native (Android)",
   "main": "./lib/module/index.js",
