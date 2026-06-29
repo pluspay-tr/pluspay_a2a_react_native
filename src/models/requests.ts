@@ -231,6 +231,14 @@ export const PPOrderPaymentRequestModel = {
   },
 };
 
+export const PPAvailablePaymentMethodsRequestModel = {
+  toRequest(): PPRequest {
+    return {
+      header: header(PPTransactionType.AVAILABLE_PAYMENT_METHODS),
+    };
+  },
+};
+
 export const PPEodRequestModel = {
   toRequest(params?: { types?: PPEodType[]; isAll?: boolean }): PPRequest {
     return {

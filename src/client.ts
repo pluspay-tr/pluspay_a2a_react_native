@@ -2,6 +2,7 @@ import Native from './NativePluspayA2aReactNative';
 import { PPA2AException } from './models/exceptions';
 import type { PPRequest } from './models/requests';
 import type {
+  PPAvailablePaymentMethodsResponse,
   PPEodResponse,
   PPMultiPaymentResponse,
   PPOrderPaymentResponse,
@@ -123,6 +124,13 @@ export class PPA2AClient {
 
   /** Trigger parameter update on POS+. */
   triggerParameters(request: PPRequest): Promise<PPParametersResponse> {
+    return this.send(request);
+  }
+
+  /** Query the payment types and methods currently available on POS+. */
+  getAvailablePaymentMethods(
+    request: PPRequest
+  ): Promise<PPAvailablePaymentMethodsResponse> {
     return this.send(request);
   }
 

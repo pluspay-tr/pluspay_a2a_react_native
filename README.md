@@ -66,6 +66,7 @@ Tüm metodlar `PPA2AClient` sınıfı üzerindedir. Her metod başarılı durumd
 | `startMultiPayment` | `PPMultiPaymentRequest.toRequest` | Çoklu ödeme başlat |
 | `triggerEod` | `PPEodRequestModel.toRequest` | Gün sonu tetikle |
 | `triggerParameters` | `PPParameterRequestModel.toRequest` | Parametre güncellemesi tetikle |
+| `getAvailablePaymentMethods` | `PPAvailablePaymentMethodsRequestModel.toRequest` | Aktif/kullanılabilir ödeme yöntemlerini sorgula |
 
 ## İstek Modelleri
 
@@ -145,6 +146,19 @@ PPParameterRequestModel.toRequest({
 });
 ```
 
+### Mevcut Ödeme Yöntemleri
+
+POS+ üzerinde o an aktif/kullanılabilir ödeme tiplerini ve yöntemlerini sorgular. Ekstra parametre gerektirmez.
+
+```ts
+const res = await pluspay.getAvailablePaymentMethods(
+  PPAvailablePaymentMethodsRequestModel.toRequest()
+);
+res.payment_types?.forEach((t) => {
+  console.log(t.code, t.methods, t.title);
+});
+```
+
 ### Çoklu Ödeme (Multi Payment)
 
 ```ts
@@ -205,6 +219,7 @@ res.total_paid;    // number
 | `startMultiPayment` | `order_code`, `status`, `grand_total`, `total_paid`, `products`, `transactions` |
 | `triggerEod` | `success`, `results`, `error_message` |
 | `triggerParameters` | `completed`, `results`, `error_message` |
+| `getAvailablePaymentMethods` | `payment_types` (`code`, `methods`, `title`) |
 
 ## Enum'lar
 

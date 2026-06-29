@@ -1,6 +1,6 @@
 {
   "name": "pluspay-a2a-react-native",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PlusPay POS+ App2App (A2A) integration for React Native (Android)",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -45,14 +45,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plus-pay-tr/pluspay_a2a_react_native.git"
+    "url": "git+https://github.com/pluspay-tr/pluspay_a2a_react_native.git"
   },
-  "author": "Fatih Can Yazici <yazicifatihcan@gmail.com> (https://github.com/plus-pay-tr)",
+  "author": "PlusPay (https://pluspay.com.tr)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/plus-pay-tr/pluspay_a2a_react_native/issues"
+    "url": "https://github.com/pluspay-tr/pluspay_a2a_react_native/issues"
   },
-  "homepage": "https://github.com/plus-pay-tr/pluspay_a2a_react_native#readme",
+  "homepage": "https://pluspay.com.tr",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -54,3 +54,13 @@ export interface PPMultiPaymentResponse extends PPA2AResponse {
   products?: any[];
   transactions?: any[];
 }
+
+export interface PPPaymentTypeMethods {
+  code?: string;
+  methods?: string[];
+  title?: string | null;
+}
+
+export interface PPAvailablePaymentMethodsResponse extends PPA2AResponse {
+  payment_types?: PPPaymentTypeMethods[];
+}

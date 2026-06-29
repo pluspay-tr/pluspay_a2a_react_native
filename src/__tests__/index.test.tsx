@@ -15,6 +15,7 @@ import {
   PPEftCancelRequestModel,
   PPCancelPaymentRequestModel,
   PPOrderPaymentRequestModel,
+  PPAvailablePaymentMethodsRequestModel,
   PPEodRequestModel,
   PPMultiPaymentRequest,
   formatOrderDate,
@@ -164,6 +165,14 @@ describe('other requests', () => {
     const r = PPOrderPaymentRequestModel.toRequest({ orderCode: 'ORD1' });
     expect(r.data).toBeUndefined();
     expect(r.header.order_code).toBe('ORD1');
+  });
+
+  it('available payment methods has header only', () => {
+    const r = PPAvailablePaymentMethodsRequestModel.toRequest();
+    expect(r.data).toBeUndefined();
+    expect(r.header.transaction_type).toBe(
+      PPTransactionType.AVAILABLE_PAYMENT_METHODS
+    );
   });
 
   it('eod sends types + is_all', () => {
